@@ -30,22 +30,24 @@ npm start
 
 ## Project Structure
 ```
-colorblind-sim/
+colorblindSimulator/
 ├─ index.html               # Vite entry point
 ├─ package.json             # dependencies + scripts
-├─ src/
-│  ├─ main.jsx              # React root
-│  ├─ App.jsx               # shell + page layout
-│  ├─ styles.css            # responsive styling
-│  ├─ components/
-│  │   ├─ Simulator.jsx     # UI + state + controls
-│  │   ├─ Webcam.jsx        # wraps getUserMedia
-│  │   └─ Daltonize.jsx     # WebGL render loop
-│  └─ lib/
-│      ├─ Daltonizer.js     # minimal WebGL helper
-│      └─ deficiencies.js   # 3×3 matrices per deficiency
-└─ public/
-	└─ favicon.ico
+├─ README.md                # docs (this file)
+├─ vite.config.js           # Vite configuration
+├─ public/
+│  └─ favicon.ico           # static assets served by Vite
+└─ src/
+   ├─ main.jsx              # React root
+   ├─ App.jsx               # shell + page layout
+   ├─ styles.css            # responsive styling
+   ├─ components/
+   │   ├─ Simulator.jsx     # UI + state + controls
+   │   ├─ Webcam.jsx        # wraps getUserMedia
+   │   └─ Daltonize.jsx     # WebGL render loop
+   └─ lib/
+   ├─ Daltonizer.js     # minimal WebGL helper
+   └─ deficiencies.js   # 3×3 matrices per deficiency
 ```
 
 ## How It Works
