@@ -17,7 +17,6 @@ Colorblind Simulator is a React + Vite demo that samples your webcam in real tim
 ## Getting Started
 ```bash
 git clone <this repo>
-cd colorblind-sim
 npm install
 npm start
 # open http://localhost:5173
@@ -30,13 +29,12 @@ npm start
 
 ## Project Structure
 ```
-colorblindSimulator/
 ├─ index.html               # Vite entry point
 ├─ package.json             # dependencies + scripts
 ├─ README.md                # docs (this file)
 ├─ vite.config.js           # Vite configuration
 ├─ public/
-│  └─ favicon.ico           # static assets served by Vite
+│  └─ favicon.png           # static assets served by Vite
 └─ src/
    ├─ main.jsx              # React root
    ├─ App.jsx               # shell + page layout
